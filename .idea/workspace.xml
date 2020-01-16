@@ -215,7 +215,8 @@
       <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/js/jquery.cubeportfolio.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Medicio/app/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Medicio/app/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/views.py" afterDir="false" />
@@ -322,15 +323,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/tests/functional/test_users.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
@@ -374,11 +366,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="245">
               <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="22" lean-forward="true" selection-end-column="22" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -435,6 +439,7 @@
         <option value="$PROJECT_DIR$/app/api/models.py" />
         <option value="$PROJECT_DIR$/app/tests/functional/test_users.py" />
         <option value="$PROJECT_DIR$/.gitlab-ci.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -761,6 +766,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="22" lean-forward="true" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
