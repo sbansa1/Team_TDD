@@ -1,0 +1,24 @@
+FROM python:3.8.0-alpine
+
+WORKDIR /usr/src/app
+
+# install dependencies
+RUN apk update && \
+    apk add --virtual build-deps gcc python-dev musl-dev && \
+    apk add postgresql-dev && \
+    apk add netcat-openbsd
+
+ENV PYTHONBYTECODE 1
+ENV PYTHONBUFFERED 1
+ENV FLASK_ENV production
+ENV APP_SETTINGS app.config.ProductionConfig
+
+COPY ./requirements.txt /usr/src/app/requirements.txt
+RUN pip install -r requirements.txt
+
+COPY . /usr/src/app
+
+RUN adduser -D myuser
+USER myuser
+
+CMD gunicorn --bind 0.0.0.0:$PORT manage:app

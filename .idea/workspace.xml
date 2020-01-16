@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="22aa5df5-06f8-42c8-8c4c-9324e56988a2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Cheffling/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/app/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/app/api/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/app/api/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/app/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/app/db/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/app/db/create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/app/extensions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/app/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/app/tests/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/app/tests/functional/test_users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/app/tests/unit/test_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/app/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cheffling/app/utils/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/ping.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/db/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/db/create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/extensions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/functional/test_ping.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/functional/test_users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/pytest.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/unit/test_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/db_resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DoctorPatientAPI/patientdoctor/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DoctorPatientAPI/patientdoctor/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DoctorPatientAPI/patientdoctor/lib/lib_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DoctorPatientAPI/patientdoctor/lib/lib_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DoctorPatientAPI/patientdoctor/user/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DoctorPatientAPI/patientdoctor/user/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DoctorPatientAPI/patientdoctor/user/business.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DoctorPatientAPI/patientdoctor/user/business.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DoctorPatientAPI/patientdoctor/user/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DoctorPatientAPI/patientdoctor/user/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DoctorPatientAPI/patientdoctor/user/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DoctorPatientAPI/patientdoctor/user/resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-commerece/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../E-commerece/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-commerece/blueprints/customers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../E-commerece/blueprints/customers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-commerece/blueprints/customers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../E-commerece/blueprints/customers/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-commerece/blueprints/customers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../E-commerece/blueprints/customers/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-commerece/blueprints/products/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../E-commerece/blueprints/products/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-commerece/blueprints/products/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../E-commerece/blueprints/products/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-commerece/blueprints/products/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../E-commerece/blueprints/products/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-commerece/blueprints/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../E-commerece/blueprints/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-commerece/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../E-commerece/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-commerece/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../E-commerece/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-commerece/lib/lib_sqlalchemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/../E-commerece/lib/lib_sqlalchemy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-commerece/lib/util_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/../E-commerece/lib/util_decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-commerece/product/blueprint/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../E-commerece/product/blueprint/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-commerece/product/blueprint/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../E-commerece/product/blueprint/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Medicio/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/arrow_large_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/arrow_large_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/arrow_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/arrow_left2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/arrow_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/arrow_right2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/arrowleft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/arrowright.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/arrows.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/black50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/boxed_bgtile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/bullet_boxed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/bullets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/bullets.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/bullets2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/coloredbg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/grain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/gridtile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/gridtile_3x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/gridtile_3x3_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/gridtile_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/large_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/large_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/loader2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/navigdots.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/navigdots_bgtile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/shadow1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/shadow2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/shadow3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/small_arrows.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/small_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/small_left_boxed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/small_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/small_right_boxed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/timer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/timerdot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/transparent.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/assets/white50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/blueprints/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Medicio/app/blueprints/users/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/blueprints/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Medicio/app/blueprints/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/blueprints/users/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Medicio/app/blueprints/users/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/blueprints/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Medicio/app/blueprints/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Medicio/app/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Medicio/app/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/bodybg/bg1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/bodybg/bg10.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/bodybg/bg2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/bodybg/bg3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/bodybg/bg4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/bodybg/bg5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/bodybg/bg6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/bodybg/bg7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/bodybg/bg8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/bodybg/bg9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/color/amethyst.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/color/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/color/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/color/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/color/lime.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/color/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/color/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/color/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/color/sand.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/color/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/nivo-lightbox-theme/default/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/nivo-lightbox-theme/default/close@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/nivo-lightbox-theme/default/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/nivo-lightbox-theme/default/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/nivo-lightbox-theme/default/loading@2x.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/nivo-lightbox-theme/default/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/nivo-lightbox-theme/default/next@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/nivo-lightbox-theme/default/prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/nivo-lightbox-theme/default/prev@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/nivo-lightbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/owl.theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/cubeportfolio/css/cubeportfolio.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/cubeportfolio/css/cubeportfolio.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/cubeportfolio/img/cbp-loading-popup.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/cubeportfolio/img/cbp-loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/cubeportfolio/img/cbp-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/cubeportfolio/img/cbp-sprite.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/cubeportfolio/js/jquery.cubeportfolio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/cubeportfolio/js/jquery.cubeportfolio.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/less/spinning.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/font-awesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/bodybg/bg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/bodybg/bg10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/bodybg/bg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/bodybg/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/bodybg/bg4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/bodybg/bg5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/bodybg/bg6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/bodybg/bg7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/bodybg/bg8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/bodybg/bg9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/dummy/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/dummy/img-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/dummy/img-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/dummy/img-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/dummy/partner-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/dummy/partner-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/dummy/partner-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/dummy/partner-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/parallax/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/photo/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/photo/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/photo/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/photo/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/photo/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/photo/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/slides/slide1/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/slides/slide1/img-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/slides/slide2/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/slides/slide3/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/slides/slide3/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/slides/slide3/img1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/team/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/team/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/team/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/team/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/testimonials/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/testimonials/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/testimonials/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/testimonials/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/testimonials/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/img/testimonials/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/js/contactform/contactform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/js/contactform/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/js/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/js/jquery.appear.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/js/jquery.easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/js/jquery.scrollTo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/js/nivo-lightbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/js/stellar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/js/wow.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/css/cubeportfolio.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/css/cubeportfolio.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/img/cbp-loading-popup.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/img/cbp-loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/img/cbp-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/img/cbp-sprite.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/js/jquery.cubeportfolio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Medicio/app/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Medicio/app/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchQuery/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchQuery/app/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchQuery/app/lib/libsqlalchemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/lib/libsqlalchemy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation/.idea/automation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../automation/.idea/automation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../automation/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../automation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../automation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gentella/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gentella/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../script/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../script/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../script/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/../script/script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swa/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../swa/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../swa/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swa/customer/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../swa/customer/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swa/customer/blueprint/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../swa/customer/blueprint/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swa/customer/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../swa/customer/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swa/customer/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../swa/customer/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swa/product/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../swa/product/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swa/product/blueprint/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../swa/product/blueprint/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../swa/product/blueprint/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/../swa/product/blueprint/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_obj/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test_obj/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_obj/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test_obj/app/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_obj/app/templates/ellipsis/ellipsis.html" beforeDir="false" afterPath="$PROJECT_DIR$/../test_obj/app/templates/ellipsis/ellipsis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/category/tests/app-test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/customer/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/customer/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/customer/blueprint/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/customer/blueprint/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/customer/blueprint/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/customer/blueprint/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/customer/blueprint/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/customer/blueprint/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/customer/blueprint/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/customer/blueprint/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/customer/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/customer/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/customer/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/customer/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/department/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/department/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/department/blueprint/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/department/blueprint/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/department/blueprint/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/department/blueprint/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/department/blueprint/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/department/blueprint/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/department/blueprint/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/department/blueprint/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/department/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/department/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/department/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/department/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/product/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/product/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/product/blueprint/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/product/blueprint/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/product/blueprint/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/product/blueprint/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/product/blueprint/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/product/blueprint/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled7/product/configProduct.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled7/product/configProduct.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/category/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/category/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/category/blueprint/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/category/blueprint/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/category/blueprint/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/category/blueprint/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/category/blueprint/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/category/blueprint/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/category/blueprint/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/category/blueprint/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/category/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/category/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/category/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/category/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/category/tests/app-test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/category/tests/app-test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/department/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/department/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/department/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/department/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/department/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/department/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/department/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/department/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/department/tests/app-test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/department/tests/app-test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/product/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/product/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/product/blueprint/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/product/blueprint/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/product/blueprint/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/product/blueprint/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/product/configProduct.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/product/configProduct.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled8/product/tests/app-test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled8/product/tests/app-test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webscrapper/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../webscrapper/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webscrapper/scrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/../webscrapper/scrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webscrapper/trial.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../webscrapper/trial.csv" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              <folding>
+                <element signature="e#168#200#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/tests/unit/test_config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-55">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/setup.cfg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/tests/functional/test_users.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/tests/conftest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/tests/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile.prod">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/venv/manage.py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/app/manage.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.dockerignore" />
+        <option value="$PROJECT_DIR$/app/model.py" />
+        <option value="$PROJECT_DIR$/app/db/create.sql" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/entrypoint.sh" />
+        <option value="$PROJECT_DIR$/app/db/Dockerfile" />
+        <option value="$PROJECT_DIR$/app/tests/__init__.py" />
+        <option value="$PROJECT_DIR$/app/tests/test_config.py" />
+        <option value="$PROJECT_DIR$/app/tests/test_ping.py" />
+        <option value="$PROJECT_DIR$/app/extensions.py" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/app/blueprints/models.py" />
+        <option value="$PROJECT_DIR$/app/blueprints/api/__init__.py" />
+        <option value="$PROJECT_DIR$/app/blueprints/__init__.py" />
+        <option value="$PROJECT_DIR$/app/blueprints/users/__init__.py" />
+        <option value="$PROJECT_DIR$/app/blueprints/users/models.py" />
+        <option value="$PROJECT_DIR$/app/blueprints/users/users.py" />
+        <option value="$PROJECT_DIR$/app/users/__init__.py" />
+        <option value="$PROJECT_DIR$/app/__init__.py" />
+        <option value="$PROJECT_DIR$/app/utils/db_resource.py" />
+        <option value="$PROJECT_DIR$/app/tests/conftest.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/app/config.py" />
+        <option value="$PROJECT_DIR$/Dockerfile.prod" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/.coveragerc" />
+        <option value="$PROJECT_DIR$/setup.cfg" />
+        <option value="$PROJECT_DIR$/app/api/ping.py" />
+        <option value="$PROJECT_DIR$/app/api/__init__.py" />
+        <option value="$PROJECT_DIR$/app/api/users.py" />
+        <option value="$PROJECT_DIR$/app/api/models.py" />
+        <option value="$PROJECT_DIR$/app/tests/functional/test_users.py" />
+        <option value="$PROJECT_DIR$/.gitlab-ci.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="55" />
+    <option name="width" value="1280" />
+    <option name="height" value="699" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="RestApi" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="RestApi" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RestApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestApi" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/api" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/blueprints/api" />
+      <recent name="$PROJECT_DIR$/app/blueprints/users" />
+      <recent name="$PROJECT_DIR$/app/tests/functional" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RestApi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.manage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22aa5df5-06f8-42c8-8c4c-9324e56988a2" name="Default Changelist" comment="" />
+      <created>1578648008410</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578648008410</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="55" width="1280" height="699" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34596375" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32967034" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.dockerignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/db/create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/pytest.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model.py" />
+    <entry file="file://$PROJECT_DIR$/app/blueprints/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/app/users/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/app/utils/db_resource.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/db/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/functional/test_ping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.editorconfig" />
+    <entry file="file://$PROJECT_DIR$/.coveragerc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmlcov/index.html" />
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/users.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/ping.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/extensions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entrypoint.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/functional/test_users.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding>
+            <element signature="e#168#200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tests/unit/test_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile.prod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
