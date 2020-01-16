@@ -215,7 +215,6 @@
       <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/js/jquery.cubeportfolio.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Medicio/app/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Medicio/app/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/views.py" afterDir="false" />
@@ -359,7 +358,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="-189">
               <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
             </state>
           </provider>
@@ -571,9 +570,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="55" width="1280" height="699" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -586,7 +584,7 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34596375" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34596375" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -802,7 +800,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="-189">
           <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
         </state>
       </provider>
