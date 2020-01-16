@@ -215,8 +215,6 @@
       <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/js/jquery.cubeportfolio.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Medicio/app/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Medicio/app/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/views.py" afterDir="false" />
