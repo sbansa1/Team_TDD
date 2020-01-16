@@ -33,6 +33,6 @@ test:
     POSTGRES_PASSWORD: ""
     DATABASE_TEST_URL: "postgres://runner@postgres:5432/users"
   script:
-    - pytest "app/tests/" -p no:warnings
+    - pytest "app/tests" -p no:warnings
     - flake8 app
     - black app --check
