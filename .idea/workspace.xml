@@ -215,7 +215,6 @@
       <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/js/jquery.cubeportfolio.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Medicio/app/static/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Medicio/app/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Medicio/app/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchQuery/app/blueprint/search/views.py" afterDir="false" />
@@ -381,8 +380,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="30">
-                <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+              <first_editor relative-caret-position="60">
+                <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -547,9 +546,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="55" width="1280" height="699" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -562,7 +560,7 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34596375" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34596375" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -776,8 +774,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+          <first_editor relative-caret-position="60">
+            <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           </first_editor>
           <second_editor />
         </state>
