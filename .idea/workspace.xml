@@ -369,9 +369,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="108">
-                <caret line="447" lean-forward="true" selection-start-line="447" selection-end-line="447" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="230">
+                <caret line="557" lean-forward="true" selection-start-line="557" selection-end-line="557" />
               </first_editor>
               <second_editor />
             </state>
@@ -779,9 +779,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="108">
-            <caret line="447" lean-forward="true" selection-start-line="447" selection-end-line="447" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="230">
+            <caret line="557" lean-forward="true" selection-start-line="557" selection-end-line="557" />
           </first_editor>
           <second_editor />
         </state>

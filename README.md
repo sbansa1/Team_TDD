@@ -532,11 +532,31 @@ if __name__=='__main__':
 ```
 
 #We will follow the TDD(Test Driven Development) process to build our application.
+
+![TDD](https://miro.medium.com/max/950/1*IbHgZrKYCUSeIbL_PywObQ.png)
+
 ```
 What is TDD?
 TDD is a development process where we write the test cases first and make sure they fail before writing the functional 
-part of an application.
+part of an application. Reason behind it is that you leads to a more bug free code. The entire process is iterable. 
+
+It is also known as Red-Green-Refactor cycle because you write the test cases and make sure it fails.
+Then you write the functional code and refactor it until the test cases pass.
 
 Why TDD? 
+
 Because it helps write a more robust and cleaner code.
-```
+
+TDD acts as a specification and helps the other developers learn about our code 
+by looking at the test cases.
+
+It helps the team members provide confidence to make changes to the code because if the test 
+cases fail the changes wont be deployed to the production. 
+
+````
+(Now what happens when you deploy your code with following a TDD approach)
+
+![TDD not implemented](https://miro.medium.com/max/1300/1*NH3pXnzK5WxWa2mHH1vRZQ.jpeg) 
+
+Surprise Surprise Surprise ! ! ! 
+
