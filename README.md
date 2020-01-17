@@ -442,13 +442,12 @@ COPY . .
 
 CMD python manage.py run -h 0.0.0.0
 
-
+```
 ```text
 Now we will update the docker-compose.yml file
-
 ```
 
-```
+
 ```bash
 version : '3.7'
 
@@ -478,7 +477,6 @@ services:
           environment:
              - POSTGRES_USER = postgres 
              - POSTGRES_PASSWORD = postgres
-
 ```
 
 ## Now why use net cat? 
