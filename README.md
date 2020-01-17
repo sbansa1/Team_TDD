@@ -453,6 +453,10 @@ services:
 
 ```
 ## Now why use net cat? 
+The netcat utility. Often referred to as a Swiss army knife of networking tools, this versatile command can assist you in monitoring, testing, and sending data across network connections.
+ 
+One of the most common uses for netcat is as a port scanner. so the netcat scans the postgres port if its free or not to check if the instance of postgres server is running or not on that particular port.
+
 Although netcat is probably not the most sophisticated tool for the job (nmap is a better choice in most cases), it can perform simple port scans to easily identify open ports.
 
 We do this by specifying a range of ports to scan, as we did above, along with the -z option to perform a scan instead of attempting to initiate a connection.
