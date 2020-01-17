@@ -320,6 +320,72 @@ pip install psycopg2-binary
 pip freeze>requirements.txt
 (will updates the requirements.txt file)
 ```
+
+```python
+##Make a config.py file in the app dir
+import os  # new
+
+
+class BaseConfig:
+    TESTING = False
+    SQLALCHEMY_TRACK_MODIFICATIONS = False  # new
+
+
+class DevelopmentConfig(BaseConfig):
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')  # new
+
+
+class TestingConfig(BaseConfig):
+    TESTING = True
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_TEST_URL')  # new
+
+
+class ProductionConfig(BaseConfig):
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')  # new
+```
+
+```python
+
+# app/__init__.py
+
+from flask import Flask
+from flask_restplus import Api,Resource
+from flask_sqlalchemy import SQLAlchemy
+import os
+
+app = Flask(__name__)
+api = Api(app)
+db = SQLAlchemy(app)
+
+app_settings = os.getenv('APP_SETTINGS')
+app.config.from_object(app_settings)
+
+
+class Hello(Resource):
+     def get(self):
+       return {"message": "Hello World !"}
+      
+#Add the resource 
+app.add_resource(Hello,"/hello")
+
+```
+```python
+# Now make a model.py file and make a model class
+
+from app import db
+
+class User(db.Model):
+  id = db.Column(db.Integer,primary_key=True,autoincrement=True)
+  username = db.Column(db.String(128), nullable=False)
+  email_id = db.Column(db.String(128),nullable=False)
+  active = db.Column(db.Boolean,default=True,nullable=False)
+  
+  def __init__(self,username,email_id):
+    self.username = username
+    self.email_id = email_id
+
+```
+
 ```text
 Create a folder named as db in your app directory
 make a file 
@@ -350,7 +416,78 @@ If you would like to do additional initialization in an image derived from this 
 *.sh scripts found in that directory to do further initialization before starting the service.
 
 
+```
+```text
+Now we will update the docker-compose.yml file
 
+```
+```bash
+version : '3.7'
+
+services:
+    users:
+       build:
+         context: . 
+            dockerfile: Dockerfile
+            entrypoint: ['/usr/src/app/entrypoint.sh']
+       volume : '.:/usr/src/app'
+       port:
+         5001:5000
+        enviroment:
+          - FLASK_APP=app/__init__.py
+          - FLASK_ENV=development
+          - APP_SETTINGS=app.config.DevelopmentConfig
+          - DATABASE_URL="postgresql://postgres:postgres@users-db:5432/users_dev"
+          - DATABASE_TEST_URL="postgresql://postgres:postgres@users-db:5432/users_test"
+        depends_on:
+          - users_db
+    users_db:
+        build:
+          context: ./app/db
+            dockerfile:Dockerfile
+          expose:
+             - 5432
+          environment:
+             - POSTGRES_USER = postgres (default)
+             - POSTGRES_PASSWORD = postgres
+
+```
+## Now why use net cat? 
+### in the absence of a client we use net cat to check the health of the postgres database running inside the container. For that we will make a entrypoint.sh file in the root of the application and write a script to make sure that the postgres is up and running on the specified port. Net cat is a tcp port which scans the port of the postgres by sending packets just to check if the postgres instance is running on that port or not.
+
+```bash
+#!/bin/sh
+
+echo "Initializing post gres..."
+
+while ! nc -z users-db 5432; do
+  sleep 0.1
+done
+## the loop will run until the post gres service is not up and running.
+
+echo "Postgres server started.. ."
+
+python manage.py run -h 0.0.0.0
+```
+```python
+#Please go in the manage.py
+
+from flask.cli import FlaskGroup
+from app import app,db
+
+cli = FlaskGroup(app)
+
+@cli.command('recreate_db')
+def recreate_db():
+  db.drop_all()
+  db.create_all()
+  db.session.commit()
+
+
+if __name__=='__main__':
+   cli() 
 ```
 
 
+
+```
