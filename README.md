@@ -415,10 +415,38 @@ Initialization scripts
 If you would like to do additional initialization in an image derived from this one, add one or more *.sql, *.sql.gz, or *.sh scripts under **/docker-entrypoint-initdb.d** (creating the directory if necessary). After the entrypoint calls initdb to create the default postgres user and database, it will run any *.sql files, run any executable *.sh scripts, and source any non-executable 
 *.sh scripts found in that directory to do further initialization before starting the service.
 
-
 ```
+#update the docker file 
+```dockerfile
+
+FROM python:3.8.0-alpine
+
+#Dependencies for postgres running in the container
+RUN apk update && \
+    apk add --virtual build-deps gcc python-dev musl-dev && \
+    apk add postgresql-dev && \
+    apk add netcat-openbsd
+
+ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE 1
+
+WORKDIR /usr/src/app
+
+COPY ./requirements.txt /usr/src/app/requirements.txt
+RUN pip install -r requirements.txt
+
+COPY ./entrypoint.sh /usr/src/app/entrypoint.sh
+RUN chmod +x /usr/src/app/entrypoint.sh
+
+COPY . . 
+
+CMD python manage.py run -h 0.0.0.0
+
+
 ```text
 Now we will update the docker-compose.yml file
+
+```
 
 ```
 ```bash
@@ -448,10 +476,11 @@ services:
           expose:
              - 5432
           environment:
-             - POSTGRES_USER = postgres (default)
+             - POSTGRES_USER = postgres 
              - POSTGRES_PASSWORD = postgres
 
 ```
+
 ## Now why use net cat? 
 The netcat utility. Often referred to as a Swiss army knife of networking tools, this versatile command can assist you in monitoring, testing, and sending data across network connections.
  
@@ -504,4 +533,12 @@ if __name__=='__main__':
    cli() 
 ```
 
+#We will follow the TDD(Test Driven Development) process to build our application.
+```
+What is TDD?
+TDD is a development process where we write the test cases first and make sure they fail before writing the functional 
+part of an application.
+
+Why TDD? 
+Because it helps write a more robust and cleaner code.
 ```
