@@ -453,9 +453,21 @@ services:
 
 ```
 ## Now why use net cat? 
-### in the absence of a client we use net cat to check the health of the postgres database running inside the container. For that we will make a entrypoint.sh file in the root of the application and write a script to make sure that the postgres is up and running on the specified port. Net cat is a tcp port which scans the port of the postgres by sending packets just to check if the postgres instance is running on that port or not.
+Although netcat is probably not the most sophisticated tool for the job (nmap is a better choice in most cases), it can perform simple port scans to easily identify open ports.
 
+We do this by specifying a range of ports to scan, as we did above, along with the -z option to perform a scan instead of attempting to initiate a connection.
+
+For instance, we can scan all ports up to 1000 by issuing this command:
+
+    netcat -z -v domain.com 1-1000
+
+Along with the -z option, we have also specified the -v option to tell netcat to provide more verbose information.
+For more information 
+```html
+<a src="https://www.digitalocean.com/community/tutorials/how-to-use-netcat-to-establish-and-test-tcp-and-udp-connections-on-a-vps"></a>
+```
 ```bash
+
 #!/bin/sh
 
 echo "Initializing post gres..."
@@ -487,7 +499,5 @@ def recreate_db():
 if __name__=='__main__':
    cli() 
 ```
-
-
 
 ```
