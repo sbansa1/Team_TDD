@@ -728,8 +728,9 @@ which test will run when we execute the above command?
 
 A blueprint is a template for generating a "section" of a web application. You can think of it as a mold:
 
-refer to the Image below
-![mold]("https://i.stack.imgur.com/kd1XW.jpg)
+#Refer to the Image below
+
+![mold]("https://i.stack.imgur.com/kd1XW.jpg")
 
 You can take the blueprint and apply it to your application in several places. Each time you apply it the blueprint will create a new version of its structure in the plaster of your application.
 
@@ -749,4 +750,4 @@ Once it is created it may be "impressed" on the application by using the registe
 
 For more Information follow the link 
 
-![Blueprint]("http://exploreflask.com/en/latest/blueprints.html)
+![Blueprint]("http://exploreflask.com/en/latest/blueprints.html")
