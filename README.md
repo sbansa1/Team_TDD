@@ -559,4 +559,194 @@ cases fail the changes wont be deployed to the production.
 ![TDD not implemented](https://miro.medium.com/max/1300/1*NH3pXnzK5WxWa2mHH1vRZQ.jpeg) 
 
 Surprise Surprise Surprise ! ! ! 
+```text
 
+Now we will use pytest over unittest library to write the test cases.
+
+```
+Install Pytest
+```bash
+pip install pytest
+```
+```text
+Make a test folder in your app directory and create the following files:
+ - __init__.py
+ - conftest.py
+ - test_config.py
+ - test_hello.py
+ - pytest.ini
+
+```
+In the conftest.py import pytest. The conftest file sets up the configuration required for testing. 
+One thing about pytest it will find the test files only if the test_* or *_test is followed. 
+One basic advantage of using pytest overy unitest is that one does not have to set up things again 
+and again. 
+
+We can do that by the use of fixtures. Fixtures help us to re use the same test object based on the scope defined.
+By default, the default scope is set to function. 
+
+function - once per test function
+class - once per test class
+module - once per test module
+session - once per test session
+
+To execute a test suite we do a set up and tear down if we use unittest lib we need to do it seprately with pytest
+we can do that in the same function.
+
+Make sure your files start with the name test_* or end with *_test. now if you are making a test class make sure you class name
+begins with the word Test. ?
+
+or if you are defining a function your name should begin with test...
+
+
+def test_app():
+   return ""
+
+Please follow the code below in conftest.py
+```python
+#conftest.py
+
+import pytest
+from app import create_app
+from app.extensions import db
+
+@pytest.fixture(scope='module')
+def test_app():
+  #set up 
+  app = create_app()
+  app.config.from_object('app.config.TestingConfig')
+  with app.app_context():
+    yield app #this is where the testing begins and once it tests all the test cases it kills the object which is the tear down phase.
+
+@pytest.fixture(scope="module")
+def test_database():
+   db.create_all()
+   yield db
+   db.session.remove()
+   db.drop_all()
+
+```
+Now the fixtures will be available to the module without having to import them. 
+Fixtures acts as an injector inside the test functions.
+
+Now please add pytest==5.3.1 in requirements.txt
+or simply run pip>requirements.txt and it will auto update with the latest dependencies
+
+
+We need to re-build the Docker images since requirements are installed at build time rather than run time:
+```bash
+docker-compose up -d --build
+```
+With the containers up and running, run the tests:
+```bash
+docker-compose exec users -m pytest "app/tests"
+
+```
+You should see:
+
+======================================== test session starts ========================================
+platform linux -- Python 3.8.0, pytest-5.3.1, py-1.8.0, pluggy-0.13.1
+rootdir: /usr/src/app/project/tests, inifile: pytest.ini
+collected 0 items
+
+=================================== no tests ran in 0.06 seconds ====================================
+
+
+# TESTS
+let's add a few tests to test_config.py:
+```python
+
+import os
+
+def test_development_config(test_app):
+  test_app.config.from_object('app.config.DevelopmentConfig')
+  assert test_app.config.get('SECRET_KEY') == 'myprecious'
+  assert not test_app.config.get('TESTING')
+  assert test_app.config['SQLALCHEMY_DATABASE_URI'] == os.environ.get('DATABASE_URL')
+ 
+def test_testing_config(test_app):
+   test_app.config.from_object('app.config.TestingConfig')
+   assert test_app.config['SECRET_KEY'] == 'myprecious'
+   assert not test_app.config['DEVELOPMENT']
+   assert not test_app.config['PRESERVE_CONTEXT_ON_EXCEPTION']
+   assert test_app.config['SQLALCHEMY_DATABASE_URI'] == os.environ.get('DATABASE_TEST_URL')
+   
+def test_production_config(test_app):
+  test_app.config.from_object('app.config.ProductionConfig')
+  assert test_app.config.get('SECRET_KEY') == 'myprecious'
+  assert not test_app.config.get('TESTING')
+  assert test_app.config['SQLALCHEMY_DATABASE_URI'] == os.environ.get('DATABASE_URL')
+  
+```
+Now run the docker command again 
+```bash
+docker-compose exec users pytest "app/tests"
+
+```
+and you should receive an assertion Error because we will have to add
+the secret key in our config.py file.
+
+Now go ahead and add SECRET_KEY='myprecious" to the config.py in the 
+BaseConfig class.
+
+RE RUN THE TESTS and IT SHOULD PASS
+```bash
+docker-compose exec users pytest 'app/tests'
+```
+So you may have realized that the above tests are unit tests and not the functional tests.
+
+#UNIT TESTING
+
+UNIT TESTING is a level of software testing where individual units/ components of a software are tested. The purpose is to validate that each unit of the software performs as designed. A unit is the smallest testable part of any software. It usually has one or a few inputs and usually a single output. In procedural programming, a unit may be an individual program, function, procedure, etc. In object-oriented programming, the smallest unit is a method, which may belong to a base/ super class, abstract class or derived/ child class. (Some treat a module of an application as a unit. This is to be discouraged as there will probably be many individual units within that module.) Unit testing frameworks, drivers, stubs, and mock/ fake objects are used to assist in unit testing.
+
+# FUNCTIONAL TESTS
+Functional tests are the test which tests your business logic to see if your code is meeting the business objectives i.e. checks if they meet the requirements specifications.
+
+Writing test cases for functional tests is a bit complicated but you will get a hang of it. 
+
+```python
+#test_hello.py
+import json
+
+def test_hello(app_test):
+   client = app_test.test_client()
+   response = client.get("/hello")
+   assert response.status_code == 200
+   data = json.loads(response.data.decode())
+   assert 'hello' in data.get('message')
+
+```
+Execute the below command
+
+```bash
+docker-compose exec users pytest "app/tests" -k hello 
+
+```
+which test will run when we execute the above command?
+
+#Flask-Blueprints
+
+A blueprint is a template for generating a "section" of a web application. You can think of it as a mold:
+
+refer to the Image below
+![mold]("https://i.stack.imgur.com/kd1XW.jpg)
+
+You can take the blueprint and apply it to your application in several places. Each time you apply it the blueprint will create a new version of its structure in the plaster of your application.
+
+
+
+
+
+This is a simple mold for working with trees - it says that any application that deals with trees should provide access to its leaves, its roots, and its rings (by year). By itself, it is a hollow shell - it cannot route, it cannot respond, until it is impressed upon an application:
+
+
+
+
+
+
+
+Once it is created it may be "impressed" on the application by using the register_blueprint function - this "impresses" the mold of the blueprint on the application at the locations specified by url_prefix.
+
+For more Information follow the link 
+
+![Blueprint]("http://exploreflask.com/en/latest/blueprints.html)
