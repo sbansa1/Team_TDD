@@ -751,3 +751,160 @@ Once it is created it may be "impressed" on the application by using the registe
 For more Information follow the link 
 
 ![Blueprint](http://exploreflask.com/en/latest/blueprints.html)
+
+# How to define a flask blueprint
+```python
+
+from flask import Blueprint
+
+hello = Blueprint('hello',__name__)
+"""This is how you define the blueprints"""
+
+```
+
+Now we will use Flask Factory to create and register blueprint. 
+# What is FLASK FACTORY?
+The Application Factory pattern is an app structure where our app entry point sits atop all other parts of our application, and pieces together the various modules or Blueprints that might make our app.
+The reason we use Flask Application Factory as it has something to do with the Flask Application Context which is a
+collection of all the modules and python files which wraps them together. 
+
+```python
+
+#app/__init__.py
+from flask import Flask
+import os
+from flask_sqlalchemy import SQLAlchemy
+
+db = SQLAlchemy()
+
+def create_app():
+   app = Flask(__name__)
+   app_settings  = os.getenv('APP_SETTINGS')
+   app.config.from_object(app_settings)
+   
+   db.init_app(app)
+   
+   '''you can register the blue print here '''
+   
+   # Include the from... to prevent circular imports
+   #app.register_blueprint(name of blueprint)
+   
+   return app # which is an app instance.
+   
+   """you can also structure it better"""
+```
+```python
+#manage.py
+
+from app import create_app
+from flask.cli import FlaskGroup
+
+app = create_app()
+cli = FlaskGroup(create_app=create_app)
+
+
+if __name__=="__main__":
+  cli()
+
+```
+```python
+#app/api/__init__.py
+
+from flask import Blueprint
+from flask_restplus import Api
+
+user_blu = Blueprint('user_blu',__name__)
+user_api = Api(user_blu)
+
+
+```
+
+
+```python
+#app/api/model.py
+
+from app import db
+
+class User(db.Model):
+  '''Create user model'''
+  __tablename__='users'
+  
+  id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+  username = db.Column(db.String(128), nullable=False)
+  email_id = db.Column(db.String(128),nullable=False)
+  active = db.Column(db.Boolean, default=True,nullable=False)
+  
+  def __init__(self,*args,**kwargs):
+   super(User,self).__init__(*args,**kwargs)
+
+```
+
+Create a view file
+```python
+from app.api import api_ping_blueprint
+from flask_restplus import Resource, fields
+
+
+
+
+class Mock(Resource):
+    def get(self):
+     return {'message':'Hello world'}
+```
+```text
+We wont proceed with writing the code before writing the test cases first
+```
+
+now go in the app/tests/functional
+
+```python
+#app/tests/functional
+import json
+
+def test_add_user(test_app, test_database):
+  """test add user"""
+  
+  client = test_app.test_client()
+  data = dict(username="Saurabh.bnss0123", email="Saurabh.bnss0123@gmail.com")
+
+  resp = client.post('/users',data=json.dumps(data),content_type='application/json')
+  assert resp.status_code == 201
+  data = json.loads(resp.data.decode())
+  assert 'saurabh.bnss0123@gmail.com' in data.get('email')
+
+
+def test_user_already_exists(test_app, test_database):
+    """Duplicate User"""
+
+    user_data = dict(username="Saurabh", email="Saurabh.bnss0123@gmail.com")
+
+    client = test_app.test_client()
+
+    client.post("/users", data=user_data, content_type="application/json")
+
+    response = client.post(
+        "/users", data=json.dumps(user_data), content_type="application/json"
+    )
+    data = json.loads(response.data.decode())
+    assert response.status_code == 400
+    assert "Sorry. That email already exists." in data["message"]
+```
+Mentioned above are the two cases where in the first case we are adding the user. 
+2) we are just chekcing if the user already exists in the second scenario.
+
+```bash
+docker-compose exec users pytest "app/tests" 
+
+#you shall see the tests will fail. Now we will go ahead and implement the code.
+```
+```python
+
+from app.api import api_ping_blueprint
+from flask_restplus import Resource, fields
+
+user_model = api_ping_blueprint.model('User',{'id' : fields.Integer(readOnly=True),
+                                               'username':fields.String(required=True),
+                                                'email':fields.String(required=True)})
+
+
+```
