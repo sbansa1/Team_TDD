@@ -901,10 +901,18 @@ docker-compose exec users pytest "app/tests"
 
 from app.api import api_ping_blueprint
 from flask_restplus import Resource, fields
+from flask import request
 
 user_model = api_ping_blueprint.model('User',{'id' : fields.Integer(readOnly=True),
                                                'username':fields.String(required=True),
                                                 'email':fields.String(required=True)})
 
+class UserResource(Resource):
+   def post(self):
+    """Post request to handle or add user"""
+    
+    data = request.get_json()
+    
+    
 
 ```
