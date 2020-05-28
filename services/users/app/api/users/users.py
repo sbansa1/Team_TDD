@@ -1,14 +1,12 @@
 from flask import Blueprint, request
 from flask_restplus import Api, Resource, fields
 
-from app.api.models import User
-
-user_blueprint = Blueprint("user_blueprint", __name__)
-api = Api(user_blueprint)
+from app.api.users.models import User
+from app.api.users import user_namespace
 
 # Handles Validation of JSON Payload we need a model
 """First the name of the Model class and its attributes"""
-user_model = api.model(
+user_model = user_namespace.model(
     "User",
     {
         "id": fields.Integer(readOnly=True),
@@ -20,7 +18,7 @@ user_model = api.model(
 
 
 class UserList(Resource):
-    @api.expect(user_model, validation=True)
+    @user_namespace.expect(user_model, validation=True)
     def post(self):
         """Api for User Registration"""
         post_data = request.get_json()
@@ -34,19 +32,19 @@ class UserList(Resource):
         response_object = {"message": "{0} was added!".format(post_data.get("email"))}
         return response_object, 201
 
-    @api.marshal_with(user_model, as_list=True)
+    @user_namespace.marshal_with(user_model, as_list=True)
     def get(self):
         return User.query.all(), 200
 
 
 class UserByID(Resource):
-    @api.marshal_with(user_model)
+    @user_namespace.marshal_with(user_model)
     def get(self, user_id):
         user = User.query.filter(id == user_id).first()
         if not user:
-            api.abort(404, f"User {user_id} does not exist")
+            user_namespace.abort(404, f"User {user_id} does not exist")
         return user, 200
 
 
-api.add_resource(UserByID, "/users/<int:user_id>")
-api.add_resource(UserList, "/users")
+user_namespace.add_resource(UserByID, "/users/<int:user_id>")
+user_namespace.add_resource(UserList, "/users")

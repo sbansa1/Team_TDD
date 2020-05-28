@@ -1,5 +1,5 @@
 import json
-from services.users import User
+from app.api.models import User
 
 
 def test_add_user(test_app, test_database):

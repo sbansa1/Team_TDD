@@ -1,7 +1,5 @@
 from flask_restplus import Resource
-
-from app.api import api_ping_blueprint
-
+from app.api.ping import ping_namespace
 
 class Ping(Resource):
     """Restful Paths"""
@@ -12,4 +10,4 @@ class Ping(Resource):
         return {"status": "success", "message": "pong"}
 
 
-api_ping_blueprint.add_resource(Ping, "/ping")
+ping_namespace.add_resource(Ping, "/ping")
