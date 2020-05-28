@@ -2,7 +2,7 @@
 
 from flask import Flask
 import os
-from app.extensions import db
+from services.app import db
 
 
 def create_app(script_info=None):
@@ -12,10 +12,10 @@ def create_app(script_info=None):
     extensions(app)
 
     # Register Blueprint(Prevents Circular Imports)
-    from app.api import ping_blueprint
+    from services.users import ping_blueprint
 
     app.register_blueprint(ping_blueprint)
-    from app.api.users import user_blueprint
+    from services.users import user_blueprint
 
     app.register_blueprint(user_blueprint)
 

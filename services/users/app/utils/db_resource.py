@@ -1,4 +1,4 @@
-from app.extensions import db
+from services.app import db
 
 
 class ResourceMixin(object):

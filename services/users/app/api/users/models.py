@@ -1,5 +1,5 @@
 from sqlalchemy import or_
-from app.extensions import db
+from app import db
 from app.utils.db_resource import ResourceMixin
 
 
