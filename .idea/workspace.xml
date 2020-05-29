@@ -20,41 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22aa5df5-06f8-42c8-8c4c-9324e56988a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/services/client/src/components/__tests__/AddUser.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/client/src/components/__tests__/UserList.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/users/app/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/users/app/api/ping/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/users/app/api/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/users/app/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/users/app/tests/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/.coverage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.coveragerc" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/.coveragerc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/.dockerignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile.prod" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/Dockerfile.prod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/api/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/ping.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/api/ping/ping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/api/users/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/db/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/db/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/db/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/db/create.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/extensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/components/AddUser.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/functional/test_ping.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/tests/functional/test_ping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/functional/test_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/tests/functional/test_users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/components/UsersList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/unit/test_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/tests/unit/test_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/db_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/utils/db_resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/entrypoint.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/setup.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/client/src/components/AddUser.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/components/AddUser.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/client/src/components/__tests__/AddUser.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/components/__tests__/AddUser.test.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +47,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
