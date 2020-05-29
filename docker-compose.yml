@@ -4,11 +4,11 @@ services:
 
   users:
     build:
-      context: .
+      context: ./services/users
       dockerfile: Dockerfile
     entrypoint: ['/usr/src/app/entrypoint.sh']  # new
     volumes:
-      - '.:/usr/src/app'
+      - './services/users:/usr/src/app'
     ports:
       - 5001:5000
     environment:
@@ -22,7 +22,7 @@ services:
 
   users-db:
     build:
-      context: ./app/db
+      context: ./services/users/app/db
       dockerfile: Dockerfile
     expose:
       - 5432

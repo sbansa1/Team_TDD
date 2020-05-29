@@ -58,7 +58,7 @@ app.add_resource(Hello,"/hello")
 # FlaskGroup extends the normal cli with commands related to Flask app.
 
 from flask.cli import FlaskGroup
-from app import app
+from services.users.app import app
 
 cli = FlaskGroup(app)
 
@@ -179,7 +179,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 #We want to copy the requirements.txt file from our app root to 
 #the root of the docker container
 
-COPY ./requirements.txt /usr/src/app/requirements.txt
+COPY services /usr/src/app/requirements.txt
 RUN pip install -r requirements.txt
 
 #Add the application 
@@ -372,7 +372,7 @@ app.add_resource(Hello,"/hello")
 ```python
 # Now make a model.py file and make a model class
 
-from app import db
+from services.users.app import db
 
 class User(db.Model):
   id = db.Column(db.Integer,primary_key=True,autoincrement=True)
@@ -432,10 +432,10 @@ ENV PYTHONDONTWRITEBYTECODE 1
 
 WORKDIR /usr/src/app
 
-COPY ./requirements.txt /usr/src/app/requirements.txt
+COPY services /usr/src/app/requirements.txt
 RUN pip install -r requirements.txt
 
-COPY ./entrypoint.sh /usr/src/app/entrypoint.sh
+COPY services /usr/src/app/entrypoint.sh
 RUN chmod +x /usr/src/app/entrypoint.sh
 
 COPY . . 
@@ -516,7 +516,7 @@ python manage.py run -h 0.0.0.0
 #Please go in the manage.py
 
 from flask.cli import FlaskGroup
-from app import app,db
+from services.users.app import app,db
 
 cli = FlaskGroup(app)
 
@@ -607,8 +607,8 @@ Please follow the code below in conftest.py
 #conftest.py
 
 import pytest
-from app import create_app
-from app.extensions import db
+from services.users.app import create_app
+from services.users.app import db
 
 @pytest.fixture(scope='module')
 def test_app():
@@ -796,7 +796,7 @@ def create_app():
 ```python
 #manage.py
 
-from app import create_app
+from services.users.app import create_app
 from flask.cli import FlaskGroup
 
 app = create_app()
@@ -823,7 +823,7 @@ user_api = Api(user_blu)
 ```python
 #app/api/model.py
 
-from app import db
+from services.users.app import db
 
 class User(db.Model):
   '''Create user model'''
@@ -841,7 +841,7 @@ class User(db.Model):
 
 Create a view file
 ```python
-from app.api import api_ping_blueprint
+from services.users import api_ping_blueprint
 from flask_restplus import Resource, fields
 
 
@@ -899,7 +899,7 @@ docker-compose exec users pytest "app/tests"
 ```
 ```python
 
-from app.api import api_ping_blueprint
+from services.users import api_ping_blueprint
 from flask_restplus import Resource, fields
 from flask import request
 

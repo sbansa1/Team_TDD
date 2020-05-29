@@ -3,22 +3,17 @@
 from flask import Flask
 import os
 from app.extensions import db
+from app.api import api
 
+from flask_cors import CORS
+
+cors = CORS()
 
 def create_app(script_info=None):
     app = Flask(__name__)
     app_settings = os.getenv("APP_SETTINGS")
     app.config.from_object(app_settings)
     extensions(app)
-
-    # Register Blueprint(Prevents Circular Imports)
-    from app.api import ping_blueprint
-
-    app.register_blueprint(ping_blueprint)
-    from app.api.users import user_blueprint
-
-    app.register_blueprint(user_blueprint)
-
     # used to register the app and db to the shell
     @app.shell_context_processor
     def ctx():
@@ -30,3 +25,5 @@ def create_app(script_info=None):
 def extensions(app):
 
     db.init_app(app)
+    cors.init_app(app,resources={r"*": {"origins": "*"}})
+    api.init_app(app)
