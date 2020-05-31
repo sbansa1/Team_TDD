@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="22aa5df5-06f8-42c8-8c4c-9324e56988a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/client/src/components/AddUser.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/components/AddUser.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/client/src/components/__tests__/AddUser.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/components/__tests__/AddUser.test.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/index.js" afterDir="false" />
     </list>

@@ -24,16 +24,21 @@ class App extends Component {
   componentDidMount() {
     this.getUsers();
   };
+addUser(event) {
+  event.preventDefault();
 
-  addUser(event){
-    event.preventDefault();
-    const data = {username: this.state.username,
-    email: this.state.email};
-
+  const data = {
+    username: this.state.username,
+    email: this.state.email
   };
 
-  axios.post(`http://localhost:5001/user/users`,data)
-  .then((res) =>)
+  axios.post(`http://localhost:5001/user/users`, data)
+  .then((res) => {
+    this.getUsers();  // new
+    this.setState({ username: '', email: '' });  // new
+  })
+  .catch((err) => { console.log(err); });
+};
 
 
   getUsers() {
