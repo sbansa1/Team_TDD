@@ -20,9 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22aa5df5-06f8-42c8-8c4c-9324e56988a2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/nginx/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/nginx/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/swagger/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/swagger/swagger.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/test/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/test/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/test/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/test/app/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/test/app/api/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/test/app/api/test/test_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/test/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/test/requrirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/client/src/components/AddUser.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/components/AddUser.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/client/src/components/UsersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/components/UsersList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/client/src/components/__tests__/AddUser.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/components/__tests__/AddUser.test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/users/app/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/users/app/db/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/app/db/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,14 +70,35 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/services/test" />
       <recent name="$PROJECT_DIR$/services/client/src/components/__tests__" />
       <recent name="$PROJECT_DIR$/services/users/app/api/ping" />
       <recent name="$PROJECT_DIR$/services/users/app/api" />
-      <recent name="$PROJECT_DIR$/services/users/app/api/users" />
-      <recent name="$PROJECT_DIR$/services/users/app" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.manage (1)">
+    <configuration name="manage (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RestApi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/services/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/services/test/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RestApi" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,6 +122,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.manage (1)" />
         <item itemvalue="Python.manage" />
       </list>
     </recent_temporary>
@@ -113,6 +153,15 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="345" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591452062176">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="345" y="209" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800/1280.0.1366.768@0.0.1280.800" timestamp="1590941145470" />
+    <state x="345" y="209" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1591452062176" />
+    <state x="326" y="15" key="#manage_(1)" timestamp="1591178842852">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="326" y="15" key="#manage_(1)/0.0.1280.800@0.0.1280.800" timestamp="1591178842852" />
     <state x="141" y="39" key="SettingsEditor" timestamp="1589982058013">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -121,5 +170,9 @@
       <screen x="1280" y="0" width="1366" height="768" />
     </state>
     <state x="1280" y="0" width="586" height="768" key="find.popup/0.0.1280.800/1280.0.1366.768@1280.0.1366.768" timestamp="1589628821165" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1591168816119">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1591168816119" />
   </component>
 </project>

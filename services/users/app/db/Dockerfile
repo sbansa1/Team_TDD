@@ -1,6 +1,4 @@
 #Docker File for PostGres
-
-
 #Pulls the official Base Image
 FROM postgres:12.1-alpine
 
