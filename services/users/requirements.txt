@@ -1,4 +1,4 @@
-flask-cors==3.0.8
+flask-cors==3.0.9
 aniso8601==8.0.0
 appdirs==1.4.3
 attrs==19.3.0
